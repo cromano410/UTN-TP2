@@ -33,6 +33,10 @@ body {
     color: white;
     text-decoration: none;
   }
+
+  img{
+    width: 100%;
+  }
   
   main {
     padding: 2em;
@@ -66,13 +70,32 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
-    text-align: center;
     background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo_house{
+    height: 50px;
+    width: auto;
+  }
+
+  .h2_grid{
+    display: flex;
+    align-items: center;
   }
 
   .bordes_redondeados{
     border: 0px;
     border-radius: 10px;
+  }
+
+  .imagen_personaje{
+
+    height: 300px;
+    width: auto;
   }
 
   .house_Gryffindor{
@@ -90,6 +113,8 @@ body {
   .house_Hufflepuff{
     background-color: var(--bg-color-house-hufflepuff);
   }
+
+  
 
   @media only screen and (max-width: 600px) {
 

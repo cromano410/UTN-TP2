@@ -12,9 +12,29 @@ fetch("https://hp-api.onrender.com/api/characters")
 
     personajes.forEach(
       (personaje) => {
-        console.log(personaje.name);
+        var fechaNacimiento;
 
-        $personajesList.innerHTML += `<div class="grid-item bordes_redondeados house_${personaje.house}">${personaje.name}</div> \n`;
+        if(personaje.dateOfBirth === null)
+          fechaNacimiento = "Sin Fecha";
+        else
+          fechaNacimiento = personaje.dateOfBirth;
+
+        $personajesList.innerHTML += 
+        `<div class="grid-item bordes_redondeados  house_${personaje.house}">
+        <h2 class="h2_grid" ><img class='logo_house' src='../img/houses/${(personaje.house)?personaje.house:'sin_casa'}.png' alt="Casa" /><span>${personaje.name}</span></h2>
+      
+        <div>
+        <img class="imagen_personaje bordes_redondeados" src="${(personaje.image)?personaje.image:'../img/sin_imagen.png'}" alt="Imagen Personaje" />
+        <div class="atributos"> 
+          <div> Especie: ${personaje.species}</div>
+          <div>Género: ${personaje.gender}</div>
+         <div>Nacimiento: ${fechaNacimiento} </div>
+        </div>
+        </div>
+        </div> `;
+
+
+      //  <div>Nacimiento: ${personaje.dateOfBirth==='null'?'Sin Fecha':personaje.dateOfBirth}</div>
 
 
        // personaje.image?"imagen":"sin imagen";
