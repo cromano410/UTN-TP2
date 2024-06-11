@@ -3,14 +3,13 @@
   --bg-color-house-slytherin: #1a472a;
   --bg-color-house-ravenclaw: #15265e;
   --bg-color-house-hufflepuff: #ecb939;
-  
 }
 
 
 
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"Cinzel", serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -58,7 +57,7 @@ body {
     background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -77,6 +76,7 @@ body {
 
 
   .grid {
+    
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
@@ -129,6 +129,10 @@ body {
 
   .house_Hufflepuff{
     background-color: var(--bg-color-house-hufflepuff);
+  }
+
+  span{
+    font-family: "Cinzel", serif; ;
   }
 
   
