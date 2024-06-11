@@ -1,15 +1,21 @@
 :root {
-  --bg-color-house-grifyndor: red;
-  --bg-color-house-slytherin: green;
-  --bg-color-house-ravenclaw: blue;
-  --bg-color-house-hufflepuff: yellow;
+  --bg-color-house-grifyndor: #740001;
+  --bg-color-house-slytherin: #1a472a;
+  --bg-color-house-ravenclaw: #15265e;
+  --bg-color-house-hufflepuff: #ecb939;
+  
 }
 
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box ; 
   }
   
   header {
@@ -58,18 +64,29 @@ body {
     bottom: 0;
   }
 
+  .cont-houses img {
+    width: 150px;
+    background-color: azure;
+  }
+
+  .cards-houses{
+    width: 20px;
+    height: 10px;
+    display: inline;
+  }
+
 
   .grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    gap: 20px;
   }
 
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
@@ -78,7 +95,7 @@ body {
   }
 
   .logo_house{
-    height: 50px;
+    height: 100px;
     width: auto;
   }
 
@@ -89,12 +106,12 @@ body {
 
   .bordes_redondeados{
     border: 0px;
-    border-radius: 10px;
+    border-radius: 50px;
   }
 
   .imagen_personaje{
 
-    height: 300px;
+    height: 250px;
     width: auto;
   }
 

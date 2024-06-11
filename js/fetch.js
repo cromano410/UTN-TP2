@@ -29,7 +29,7 @@ fetch("https://hp-api.onrender.com/api/characters")
           <div> Especie: ${personaje.species}</div>
           <div>Género: ${personaje.gender}</div>
          <div>Nacimiento: ${fechaNacimiento} </div>
-        </div>
+        <div>Casa: ${personaje.house}</div>
         </div>
         </div> `;
 
