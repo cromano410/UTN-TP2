@@ -19,6 +19,8 @@ fetch("https://hp-api.onrender.com/api/characters")
         else
           fechaNacimiento = personaje.dateOfBirth;
 
+        var fechaNacimiento = personaje.dateOfBirth === null?"sin fecha":personaje.dateOfBirth;
+
         $personajesList.innerHTML += 
         `<div class="grid-item bordes_redondeados  house_${personaje.house}">
         <h2 class="h2_grid" ><img class='logo_house' src='../img/houses/${(personaje.house)?personaje.house:'sin_casa'}.png' alt="Casa" /><span>${personaje.name}</span></h2>

@@ -61,10 +61,13 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
+    
   }
+
 
   .cont-houses img {
     width: 150px;
+    height: 200px;
     background-color: azure;
   }
 
@@ -72,6 +75,11 @@ body {
     width: 20px;
     height: 10px;
     display: inline;
+  }
+
+  .cards-houses:last-child {
+
+    padding-bottom: 200px;
   }
 
 
@@ -131,11 +139,16 @@ body {
     background-color: var(--bg-color-house-hufflepuff);
   }
 
-  span{
-    font-family: "Cinzel", serif; ;
-  }
+
 
   
+  @media only screen and (max-width: 800px) {
+
+    .grid {
+      grid-template-columns: auto auto;
+    }
+
+  }
 
   @media only screen and (max-width: 600px) {
 
@@ -144,3 +157,7 @@ body {
     }
 
   }
+
+
+ 
+  
