@@ -86,8 +86,9 @@ body {
   .grid {
     
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+   
   }
 
   .grid-item {
@@ -142,21 +143,21 @@ body {
 
 
   
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
 
     .grid {
-      grid-template-columns: auto auto;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
   }
+
 
   @media only screen and (max-width: 600px) {
 
     .grid {
       grid-template-columns: auto;
-    }
+    }} 
 
-  }
 
 
  
