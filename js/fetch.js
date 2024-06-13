@@ -31,15 +31,7 @@ fetch("https://hp-api.onrender.com/api/characters")
           <div> Especie: ${personaje.species}</div>
           <div>Género: ${personaje.gender}</div>
          <div>Nacimiento: ${fechaNacimiento} </div>
-        <div>Casa: ${personaje.house}</div>
-        </div>
-        </div> `;
-
-
-      //  <div>Nacimiento: ${personaje.dateOfBirth==='null'?'Sin Fecha':personaje.dateOfBirth}</div>
-
-
-       // personaje.image?"imagen":"sin imagen";
+        <div>Casa: ${personaje.house}</div>`;
 
       }
     );

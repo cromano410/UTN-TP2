@@ -9,16 +9,21 @@
 
 
 body {
+    background:linear-gradient( rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/bg-hogwarts.jpg) no-repeat center center fixed;
     font-family:"Cinzel", serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box ; 
+    color: rgba(255, 255, 255, 0.905);
   }
+
+ 
   
   header {
-    background-color: #343a40;
+    background-color: #0e0f11;
     color: white;
     padding: 1em 0;
   }
@@ -53,8 +58,19 @@ body {
     margin: 0 auto;
   }
   
+  h1{
+    font-size: 50px;
+  }
+
+  p span {
+
+    font-size: 30px;
+  }
+
+
+
   footer {
-    background-color: #343a40;
+    background-color: #0e0f11 ;
     color: white;
     text-align: center;
     padding: 0.5em 0;
@@ -68,7 +84,6 @@ body {
   .cont-houses img {
     width: 150px;
     height: 200px;
-    background-color: azure;
   }
 
   .cards-houses{
@@ -88,13 +103,15 @@ body {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+    color: #0e0f11;
+    font-weight: bold;
    
   }
 
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(12, 12, 12, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     background-color: #f1f1f1;
     display: flex;
@@ -120,7 +137,7 @@ body {
 
   .imagen_personaje{
 
-    height: 250px;
+    height: 200px;
     width: auto;
   }
 
@@ -138,9 +155,17 @@ body {
 
   .house_Hufflepuff{
     background-color: var(--bg-color-house-hufflepuff);
+  }  
+  
+  .house_sin_casa{
+
+    background-color: #0e0f11;
   }
 
+  .personajesList h2 span {
 
+    font-weight: bold;
+  }
 
   
   @media only screen and (max-width: 1000px) {
